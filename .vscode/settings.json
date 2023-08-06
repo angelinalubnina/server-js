@@ -1,0 +1,53 @@
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "npm.keybindingsChangedWarningShown": true,
+    "files.autoSave": "onFocusChange",
+    "editor.largeFileOptimizations": false,
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.printWidth": 80,
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": false,
+    "prettier.singleQuote": true,
+    "prettier.trailingComma": "all",
+    "prettier.jsxSingleQuote": false,
+    "prettier.arrowParens": "always",
+    "prettier.semi": true,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "beautify.config": {
+        "beautify.language": {
+            "js": {
+                "type": [
+                    "javascript",
+                    "json"
+                ],
+                "filename": [
+                    ".jshintrc",
+                    ".jsbeautifyrc"
+                ],
+                "ext": [
+                    "js",
+                    "json"
+                ]
+            }
+        },
+        "beautify.jsindentchar": " ",
+        "beautify.jsindentlevel": 2,
+        "beautify.jsinsertlines": true,
+        "beautify.jsmaxpreservenewlines": 2,
+        "beautify.jspreserveblanklines": true,
+        "beautify.jsquote": "'",
+        "beautify.jsseparateline": true
+    },
+
+}
