@@ -6,5 +6,6 @@ const checkRole = require('../middleware/RoleMiddleware');
 const router = new Router()
 router.post('/', authMiddleware, checkRole(['ADMIN']), colorController.create)
 router.get('/', authMiddleware, checkRole(['ADMIN']), colorController.getAll)
+router.post('/getMany', colorController.getManyByIds)
 
 module.exports = router

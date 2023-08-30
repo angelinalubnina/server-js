@@ -1,4 +1,5 @@
 const ColorModel = require('../models/color')
+const DeviceModel = require('../models/device')
 
 class ColorController {
     // async create(req, res) {
@@ -38,6 +39,18 @@ class ColorController {
     async getAll(req, res) {
         const colors = await ColorModel.find()
         return res.json(colors)
+    }
+
+    async getManyByIds(req, res) {
+        const { deviceColors } = req.body
+        const deviceColorCodes = []
+
+        for (const colorId of deviceColors) {
+            const color = await ColorModel.findById(colorId)
+            deviceColorCodes.push(color)
+            console.log(deviceColorCodes)
+        }
+        return res.json(deviceColorCodes)
     }
 }
 module.exports = new ColorController();
